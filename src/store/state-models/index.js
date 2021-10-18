@@ -2,12 +2,17 @@
 // Import State Models here
 
 // App.
-import { default as _app } from './app';
+import { default as AppModel } from './app';
 
 // Other models go here
 
 
+// export named and default
+export {
+  AppModel
+}
+
 // add your State Model to this array
 export default {
-  app: _app
+  app: AppModel
 }

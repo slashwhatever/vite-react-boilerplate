@@ -8,20 +8,18 @@ function useDebounce(value, delay = 500) {
   // Local state stores the value passed in 
   const [dbValue, setDbValue] = useState(value);
 
-  useEffect(
-    () => {
-      // Set a timeout to update the local state after the delay period
-      const timer = setTimeout(() => {
-        setDbValue(value);
-      }, delay);
+  useEffect(() => {
+    // Set a timeout to update the local state after the delay period
+    const timer = setTimeout(() => {
+      setDbValue(value);
+    }, delay);
 
-      // Clear the timeoutIf the value changes in the timeout period, update the value and clear the timeout
-      return () => {
-        clearTimeout(timer);
-      };
-    },
-    [value, delay] // Only re-call effect if value or delay changes
-  );
+    // Clear the timeoutIf the value changes in the timeout period, update the value and clear the timeout
+    return () => {
+      clearTimeout(timer);
+    };
+  }, [value, delay]); // Only re-call effect if value or delay changes
+
   return dbValue;
 }
 
