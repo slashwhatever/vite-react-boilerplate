@@ -1,4 +1,4 @@
-# Vite React Boilerplate
+# Vite + React Boilerplate
 
 Boilerplate app for React bundled with Vite
 
@@ -14,7 +14,7 @@ yarn install && yarn run dev
 
 Done!
 
-Note that this also includes rematch-redux for state management which you can easily remove if you prefer an alternative state management solution.
+Note that this also includes rematch-redux for state management as well as Jest and Testing Library for unit tests.
 
 Vite: https://github.com/vitejs/vite
 
@@ -23,3 +23,7 @@ React: https://github.com/facebook/react/
 Rematch: https://rematchjs.org/
 
 React-redux: https://github.com/reduxjs/react-redux
+
+Jest: https://github.com/facebook/jest
+
+Testing library: https://github.com/testing-library
