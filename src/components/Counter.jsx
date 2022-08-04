@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react'
 import { connect } from 'react-redux'
 
 import store from "../store/index.js";
-const { dispatch } = store;
-
 import useDebounce from '../hooks/useDebounce.js'
+
+const { dispatch } = store;
 
 const Counter = () => {
   const [count, setCount] = useState(0);

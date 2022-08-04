@@ -1,3 +1,6 @@
+---
+to: src/store/state-models/app.js
+---
 // define initial state
 const _initialState = {
   count: 0
