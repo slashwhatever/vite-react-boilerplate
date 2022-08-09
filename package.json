@@ -7,6 +7,8 @@
     "serve": "vite preview",
     "test": "yarn run jest -env=jsdom",
     "generate:rematch": "hygen rematch new",
+    "generate:rematch-model": "hygen rematch model",
+    "generate:rematch-comp": "hygen rematch component",
     "generate:context": "hygen context new"
   },
   "dependencies": {
